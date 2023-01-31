@@ -1,16 +1,16 @@
 const Scratch = require("scratch-site-api")
 const fs = require("fs/promises")
-
 const client = new Scratch.User()
 const users = require("./users.json")
-const config = require("./config.json")
+const SCRATCHUSERNAME = ""
+const SCRATCHPASSWORD = ""
 
 const messages = [
     "SUB_SCR_IBE TO SEVENWORKS AT YouTube.com/@sevenworks !!!"
 ]
 
 const rekt = async () => {
-    await client.login(config.username, config.password)
+    await client.login(scratchusername, scratchpassword)
     const messages = await client.messages.getCount()
     comment(users[Math.floor(Math.random() * users.length)])
 }
