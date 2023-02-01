@@ -4,7 +4,10 @@
   "description": "Spambot for the Scratch Website, Spam little kids!",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "npx gritty --port 8000 --command node index.js --auto-restart"
+  },
+  "engines": {
+    "node": "v16.14.2"
   },
   "author": "Sevenworks",
   "license": "GNU",
